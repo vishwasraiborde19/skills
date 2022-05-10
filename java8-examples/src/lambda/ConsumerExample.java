@@ -23,28 +23,27 @@ public class ConsumerExample {
 		students.stream().forEach(changeName.andThen(printoperation));
 
 	}
-	
 
 	public static void addAndPredicate() {
 
 		Predicate<Student> gpaFileterv = x -> x.getGpa() == 4;
-	    Consumer<Student> changeName = s -> s.setName(s.getName().toUpperCase());
-		Consumer<Student> printoperation =  System.out::println;
+		Consumer<Student> changeName = s -> s.setName(s.getName().toUpperCase());
+		Consumer<Student> printoperation = System.out::println;
 
 		List<Student> students = StudentDataBase.getAllStudents();
 		students.stream().filter(gpaFileterv).forEach(changeName.andThen(printoperation));
 
 	}
 
-	public static void main(String args[]) { 
+	public static void main(String args[]) {
 
 		getStudentlist();
 
 		System.out.println("add");
 		add();
-		
+
 		System.out.println("addAndPredicate");
 		addAndPredicate();
 
-
-}}
+	}
+}
