@@ -54,7 +54,7 @@ public class ArrayUtilsOddEvenParser {
 	}
 
 	private static Integer getCharToInt(char intAsString) {
-		return Integer.parseInt(intAsString + "");
+		return Integer.parseInt(String.valueOf(intAsString));
 	}
 
 	public static void main(String[] args) {
@@ -64,8 +64,8 @@ public class ArrayUtilsOddEvenParser {
 
 		while (scanner.hasNext()) {
 
-			String array = scanner.next();
-			List<Integer> input = copyValuesAsList(array);
+			String stringofintegers = scanner.next();
+			List<Integer> input = copyValuesAsList(stringofintegers);
 
 			System.out.println("Output :" + generateStringWithOddEvenSeparator(input));
 			System.out.println(ENTER_ARRAY_MESSAGE);

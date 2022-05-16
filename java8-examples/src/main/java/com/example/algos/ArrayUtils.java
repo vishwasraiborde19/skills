@@ -12,20 +12,27 @@ import org.springframework.stereotype.Service;
 @Service
 public class ArrayUtils {
 
+	/**
+	 * Find the smalled kth element from an array
+	 * 
+	 * input = 34567812 kth = 3 = output = find the third smallest elemet from the
+	 * input
+	 */
+
 	private static final String ENTER_ARRAY_MESSAGE = "Please Enter an Integer Array and presss Enter:= ";
 	private static final String ENTER_ELEMENT_MESSAGE = "Please Enter an smallest kth element := ";
 	private static final String OUTPUT_MESSAGE = "Output the smallest kth elemet is  := ";
 	private static final String VALIDATIO_MESSAGE = "Please enter a value within string length  := ";
 
 	public static String getIndextOfLowestValuefromArray(List<Integer> input, Integer smallestKth) {
-		
+
 		Set<Integer> colletor = new HashSet<>(input);
 		try {
 			if (smallestKth > input.size()) {
 				System.out.println(VALIDATIO_MESSAGE + input.size());
 				return null;
 			}
-			return colletor.stream().collect(Collectors.toList()).get(smallestKth).toString();
+			return colletor.stream().collect(Collectors.toList()).get(smallestKth - 1).toString();
 		} catch (Exception e) {
 			return null;
 		}
@@ -49,10 +56,10 @@ public class ArrayUtils {
 		while (scanner.hasNext()) {
 
 			String array = scanner.next();
-			List<Integer> input = converStringArrytoInt(array);
-
 			System.out.print(ENTER_ELEMENT_MESSAGE);
 			String smallestKth = scanner.next();
+
+			List<Integer> input = converStringArrytoInt(array);
 			Integer intSmallestKth = Integer.parseInt(smallestKth);
 
 			String output = getIndextOfLowestValuefromArray(input, intSmallestKth);
