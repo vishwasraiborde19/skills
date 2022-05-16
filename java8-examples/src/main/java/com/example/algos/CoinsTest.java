@@ -11,24 +11,25 @@ public class CoinsTest {
 	 */
 
 	public static void getTheleashNumberOfCoins(Integer sum) {
+		
 		int coinValueSix = 6;
 		int coinValueThree = 3;
 		int coinValueOne = 1;
 		int totalcoins = 0;
 
-		for (int i = 0; totalcoins < coinValueSix; i++) {
+		while ( totalcoins < coinValueSix) {
 			totalcoins = sum / coinValueSix;
 			sum = sum - (coinValueSix * totalcoins);
 			System.out.println(coinValueSix + " * " + totalcoins + "=" + coinValueSix * totalcoins);
 		}
 		
-		for (int i = 0; sum >= coinValueThree; i++) {
+		while ( sum >= coinValueThree ) {
 			totalcoins = sum / coinValueThree;
 			sum = sum - (coinValueThree * totalcoins);
 			System.out.println(coinValueThree + " * " + totalcoins + "=" + coinValueThree * totalcoins);
 		}
 		
-		for (int i = 0; sum >= coinValueOne; i++) {
+		while ( sum >= coinValueOne) {
 			totalcoins = sum / coinValueOne;
 			sum = sum - (coinValueThree * totalcoins);
 			System.out.println(coinValueOne + " * " + totalcoins + "=" + coinValueOne * totalcoins);
