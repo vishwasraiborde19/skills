@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import test.data.Student;
-import test.data.StudentDataBase;
+import com.example.data.Student;
+import com.example.data.StudentDataBase;
 
 public class ConsumerExample {
 
