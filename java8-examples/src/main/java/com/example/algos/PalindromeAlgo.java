@@ -42,9 +42,9 @@ public class PalindromeAlgo {
 		return false;
 	}
 
-	private static boolean isBalancedString(int number) {
+	private static boolean isBalancedString(int stringLength) {
 
-		return (number % 2 == 00 ? Boolean.TRUE : Boolean.FALSE);
+		return (stringLength % 2 == 00 ? Boolean.TRUE : Boolean.FALSE);
 
 	}
 	
