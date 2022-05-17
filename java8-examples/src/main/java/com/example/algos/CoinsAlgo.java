@@ -2,7 +2,7 @@ package com.example.algos;
 
 import java.util.Scanner;
 
-public class CoinsTest {
+public class CoinsAlgo {
 
 	/**
 	 * Question 1: Given coins of value 1, 3, and 6 and a sum, what is the minimum
