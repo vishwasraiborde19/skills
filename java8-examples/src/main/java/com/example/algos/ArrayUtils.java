@@ -14,7 +14,6 @@ public class ArrayUtils {
 
 	/**
 	 * Find the smalled kth element from an array
-	 * 
 	 * input = 34567812 kth = 3 = output = find the third smallest elemet from the
 	 * input
 	 */

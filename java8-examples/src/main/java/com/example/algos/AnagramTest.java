@@ -1,9 +1,17 @@
 package com.example.algos;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class AnagramTest {
+	
+	/**
+	 * two sting 
+	 * Anagram example 
+	 * arg1 pat 
+	 * arg2 tap 
+	 * 
+	 * with the same length the alphabets form a new word
+	 * */
 
 	public static void main(String args[]) {
 
@@ -33,9 +41,9 @@ public class AnagramTest {
 
 	private static int getAsciSumofCharArray(char[] chars) {
 		int asciSum = 0;
+		
 		for (int i = 0; i < chars.length; i++) {
 			asciSum = asciSum + chars[i];
-
 		}
 		return asciSum;
 
