@@ -1,4 +1,4 @@
-package com.example.algos;
+package com.example.hackerrank;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +79,7 @@ public class PalindromeNumber {
 				count++;
 				int reversed = reverseNumber(originalNumber);
 				originalNumber = originalNumber + reversed;
-				// isPal = isPal(originalNumber);
+				
 			}
 			System.out.println("Palendrome [ " + originalNumber + " ] generated  in [ " + count + " ] counts");
 		}
@@ -101,7 +101,7 @@ public class PalindromeNumber {
 			}
 		} catch (Exception e) {
 			
-			System.out.print("Try again with a smaller number Enter a number :");
+			System.out.print("Try again with a smaller number Enter a number :" + e.getMessage());
 			while (scanner.hasNext()) {
 				originalNumber = scanner.nextInt();
 				execute(originalNumber);

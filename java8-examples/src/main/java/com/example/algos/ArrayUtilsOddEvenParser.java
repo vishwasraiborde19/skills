@@ -11,7 +11,7 @@ public class ArrayUtilsOddEvenParser {
 
 	private static final String ENTER_ARRAY_MESSAGE = "Please Enter an Integer Array and presss Enter:= ";
 	private static final String ASTRIX = "*";
-	private static final String DASH = "*";
+	private static final String DASH = "-";
 
 	public static String generateStringWithOddEvenSeparator(List<Integer> input) {
 

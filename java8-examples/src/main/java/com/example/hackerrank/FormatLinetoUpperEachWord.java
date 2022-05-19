@@ -1,8 +1,8 @@
-package com.example.algos;
+package com.example.hackerrank;
 
 import java.util.StringTokenizer;
 
-public class StringTest1 {
+public class FormatLinetoUpperEachWord {
 	
 	private  static final String TAB_LIMIT = " " ;
 

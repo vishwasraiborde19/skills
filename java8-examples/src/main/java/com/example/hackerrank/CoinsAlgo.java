@@ -1,4 +1,4 @@
-package com.example.algos;
+package com.example.hackerrank;
 
 import java.util.Scanner;
 

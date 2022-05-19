@@ -13,23 +13,7 @@ public class AnagramTest {
 	 * with the same length the alphabets form a new word
 	 * */
 
-	public static void main(String args[]) {
-
-		Scanner scanner = new Scanner(System.in);
-
-		System.out.print("Enter String one: ");
-		while (scanner.hasNext()) {
-
-			String argOne = scanner.next();
-
-			System.out.print("Enter String two: ");
-			String argTwo = scanner.next();
-			System.out.println(isAnagram(argOne.toLowerCase(), argTwo.toLowerCase()));
-			
-			System.out.print("Enter String one: ");
-		}
-
-	}
+	
 
 	public static boolean isAnagram(String argsOne, String argsTwo) {
 
@@ -46,6 +30,24 @@ public class AnagramTest {
 			asciSum = asciSum + chars[i];
 		}
 		return asciSum;
+
+	}
+	
+	public static void main(String args[]) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter String one: ");
+		while (scanner.hasNext()) {
+
+			String argOne = scanner.next();
+
+			System.out.print("Enter String two: ");
+			String argTwo = scanner.next();
+			System.out.println(isAnagram(argOne.toLowerCase(), argTwo.toLowerCase()));
+			
+			System.out.print("Enter String one: ");
+		}
 
 	}
 

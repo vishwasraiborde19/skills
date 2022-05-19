@@ -1,4 +1,4 @@
-package com.example.algos;
+package com.example.hackerrank;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ArrayUtils {
+public class SmallestKthElementInArray {
 
 	/**
 	 * Find the smalled kth element from an array
